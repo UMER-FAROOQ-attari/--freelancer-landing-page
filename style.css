@@ -1,6 +1,21 @@
 .logo {
   color: #17a2b8 !important;
 }
-.hero{
-    background-image: url(./1.png);
+.hero {
+  background-image: url(./1.png);
+}
+.rounded-tl-lg {
+  border-top-left-radius: 236px;
+}
+.rounded-tr-lg {
+  border-top-right-radius: 236px;
+}
+.rounded-bl-lg {
+  border-bottom-left-radius: 236px;
+}
+.rounded-br-lg {
+  border-bottom-right-radius: 236px;
+}
+.shadows{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.315);
 }
