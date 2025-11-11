@@ -20,8 +20,15 @@
 .center-card {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.315);
 }
-.question{
+.question {
   text-align: start;
-  min-width: fit-content  ;
- max-width: fit-content;
-  }
+  min-width: fit-content;
+  max-width: fit-content;
+}
+.bor {
+  border: 1px gray solid;
+}
+footer{
+
+  background-color: #343a40!important;
+}
