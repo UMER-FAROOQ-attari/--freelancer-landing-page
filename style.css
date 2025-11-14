@@ -4,16 +4,16 @@
 .hero {
   background-image: url(./1.png);
 }
-.rounded-tl-lg {
+.rounded-tl-md {
   border-top-left-radius: 236px;
 }
-.rounded-tr-lg {
+.rounded-tr-md {
   border-top-right-radius: 236px;
 }
-.rounded-bl-lg {
+.rounded-bl-md {
   border-bottom-left-radius: 236px;
 }
-.rounded-br-lg {
+.rounded-br-md {
   border-bottom-right-radius: 236px;
 }
 .shadows,
@@ -32,5 +32,9 @@ footer {
   background-color: #343a40 !important;
 }
 body {
-        overflow-x: hidden; /* افقی سکرولنگ کو چھپا دیتا ہے */
-    }
+  overflow-x: hidden !important;
+}
+
+.imagesFlex{
+  width: 90%;
+}
