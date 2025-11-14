@@ -28,7 +28,9 @@
 .bor {
   border: 1px gray solid;
 }
-footer{
-
-  background-color: #343a40!important;
+footer {
+  background-color: #343a40 !important;
 }
+body {
+        overflow-x: hidden; /* افقی سکرولنگ کو چھپا دیتا ہے */
+    }
