@@ -19,31 +19,58 @@
 <body>
     <div class="allof">
     <center class="flex flex-col items-center w-[90%]  justify-self-center ">
-       <div class=" text-start hero flex row mt-5  p-5 py-2  py-md-0 mt-md-0 container flex justify-center items-center text-center-sm text-center-xs gap-15">
+   <header class="topnav flex p-7 justify-between items-center w-full" id="myTopnav">
+    <div class="logo active">
+        <a href="#" class="text-2xl font-bold text-teal-600 hover:text-blue-800 transition-colors duration-300">
+            UMER
+        </a>
+    </div>
+
+    <div class="nav-content flex gap-10 items-center hidden sm:flex">
+        <nav class="flex gap-10">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Testimonial</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="Btns flex">
+            <button type="button"
+                class="text-gray-900 bg-white border-gray-300 focus:outline-none hover:text-teal-600 focus:ring-4 focus:ring-gray-100 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">SignIn</button>
+            <button
+                class="text-gray-900 bg-white border border-gray-300 focus:outline-none text-teal-600 hover:bg-teal-600 hover:text-white focus:ring-4 focus:ring-gray-100 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Sign
+                Up</button>
+        </div>
+    </div>
+    
+    <a href="javascript:void(0);" class="icon sm:hidden" onclick="myFunction()">
+        <i class="fa-solid fa-bars text-2xl"></i>
+    </a>
+</header>
+<!--  
+        <div class=" text-start hero flex row mt-5  p-5 py-2  py-md-0 mt-md-0 container flex justify-center items-center text-center-sm text-center-xs gap-15">
             <div class="logo">
                 <a href="#" class="text-2xl font-bold text-teal-600 hover:text-blue-800 transition-colors duration-300">
                     UMER
                 </a>
             </div>
             <nav class=" flex items-center font-bold text-1xl flex-3 place-content-between">
-                <ul class="flex gap-8">
-                    <li class="text-gray-500 dark:text-white hover:text-teal-600"><a href="#">Home</a></li>
-                    <li class="text-gray-500 dark:text-white hover:text-teal-600"><a href="#">About</a></li>
-                    <li class="text-gray-500 dark:text-white hover:text-teal-600"><a href="#">Testimonial</a></li>
-                    <li class="text-gray-500 dark:text-white hover:text-teal-600"><a href="#">Contact</a></li>
-                </ul>
-                <ul class="flex gap-1 items-end">
-                    <button type="button"
-                        class="text-gray-900 bg-white  border-gray-300 focus:outline-none hover:text-teal-600 focus:ring-4 focus:ring-gray-100 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Sign
-                        In</button>
-                    <button
-                        class="text-gray-900 bg-white border border-gray-300 focus:outline-none text-teal-600 hover:bg-teal-600 hover:text-white focus:ring-4 focus:ring-gray-100 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Sign
-                        Up</button>
-                </ul>
-
+ <div class="topnav" id="myTopnav">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Testimonal</a>
+        <a href="#">Contant</a>
+        <a href="#"> <button type="button"
+                class="text-gray-900 bg-white  border-gray-300 focus:outline-none hover:text-teal-600 focus:ring-4 focus:ring-gray-100 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">SignIn</button></a>
+        <a href="#"><button
+                class="text-gray-900 bg-white border border-gray-300 focus:outline-none text-teal-600 hover:bg-teal-600 hover:text-white focus:ring-4 focus:ring-gray-100 font-medium rounded-md text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Sign
+                Up</button></a>
+        <a href="#" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
             </nav>
 
-     </div>
+     </div> -->
 
         <div
             class=" text-start hero flex row mt-5  p-5 py-2  py-md-0 mt-md-0 container flex justify-center text-center-sm text-center-xs">
@@ -379,5 +406,17 @@
     </footer>
     </div>
 </body>
+<script>
+  function myFunction(){
+        var x = document.getElementById("myTopnav");
+        if(x.className.indexOf("responsive") === -1){
+            x.className += " responsive";
+        }
+        else{
+            // Remove 'responsive' class carefully if other classes exist (better practice)
+            x.className = x.className.replace(" responsive", ""); 
+        }
+    }
+</script>
 
 </html>
