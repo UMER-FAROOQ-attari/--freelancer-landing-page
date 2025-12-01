@@ -1,76 +1,84 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
 .logo {
   color: #17a2b8 !important;
-}
-
-.hero {
-  background-image: url(./1.png);
-}
-
-.rounded-tl-md {
-  border-top-left-radius: 236px;
-}
-
-.rounded-tr-md {
-  border-top-right-radius: 236px;
-}
-
-.rounded-bl-md {
-  border-bottom-left-radius: 236px;
-}
-
-.rounded-br-md {
-  border-bottom-right-radius: 236px;
-}
-
-.shadows,
-.center-card {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.315);
-}
-
-.question {
-  text-align: start;
-  min-width: fit-content;
-  max-width: fit-content;
-}
-
-.bor {
-  border: 1px gray solid;
 }
 
 footer {
   background-color: #343a40 !important;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: hidden !important;
+.bor {
+  border: 1px solid gray;
+}
+
+.shadows,
+.center-card {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.315);
+}
+.heroImage{
+  width:   fit-content;;
+}
+
+.rounded-tl-md { border-top-left-radius: 50%; }
+.rounded-tr-md { border-top-right-radius: 50%; }
+.rounded-bl-md { border-bottom-left-radius: 50%; }
+.rounded-br-md { border-bottom-right-radius: 50%; }
+
+.hero {
+  background-image: url(./1.png);
 }
 
 .imagesFlex {
   width: 90%;
 }
 
+.question {
+  height: 90%;
+  text-align: start;
+  min-width: fit-content;
+  max-width: fit-content;
+}
+
+
 .topnav {
   position: relative;
 }
-
-.topnav .nav-content {}
 
 .topnav .icon {
   display: none;
 }
 
-@media screen and (max-width: 639px) {
+.pix{
+  height: -webkit-fill-available;
+  width: 15%    ;
+}
+@media screen and (max-width: 640px) {
+ 
+  .heroImage{
+    visibility: hidden;
+  }
+  .heading {
+    font-size: 20px !important;
+  }
+    .pera{
+    font-size: 10px;
+  }
   .topnav {
     justify-content: space-between !important;
   }
-  
+
   .topnav .nav-content {
     display: none !important;
   }
-  
+
   .topnav .icon {
     display: block;
   }
@@ -80,7 +88,7 @@ body {
     align-items: flex-start;
     padding-bottom: 0;
   }
-  
+
   .topnav.responsive .icon {
     position: absolute;
     right: 28px;
@@ -91,59 +99,67 @@ body {
     display: flex !important;
     flex-direction: column;
     width: 100%;
-    gap: 0;
     padding: 10px 0;
   }
-  
-  .topnav.responsive nav, 
+
+  .topnav.responsive nav,
   .topnav.responsive .Btns {
     flex-direction: column;
     width: 100%;
-    gap: 5px;
   }
-  
-  .topnav.responsive a, 
+
+  .topnav.responsive a,
   .topnav.responsive button {
-    display: block;
+    width: 100%;
     text-align: left;
     padding: 10px 14px;
-    width: 100%;
   }
-  
-  .topnav.responsive .Btns button {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-}
 
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+.heading {
+    font-size: 20px !important;
+  }
+
+  p{
+    font-size: 15px;
+  }
+  .pera{
+    font-size: 15px;
+  }
+  
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .allof {
-    padding: 0;
-    margin: 0;
-  }
   
+  .allof,
   .hero {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
-  
-  .heading { 
+
+  .imgtext {
+    top: 90px;
+    left: 90px;
+  }
+
+  .heading {
     font-size: 40px !important;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+
   center {
     width: 100% !important;
-    padding: 0px;
     margin: 0;
-  }
-  
-  .download {
     padding: 0;
-    margin: 0;
   }
-  
+
+  .download {
+    margin: 0;
+    padding: 0;
+  }
+
   body {
     width: 100%;
     overflow: auto;
